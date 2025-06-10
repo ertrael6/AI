@@ -238,4 +238,3 @@ A photorealistic portrait of a young woman in the forest, natural light, soft fo
 
 ---
 
-> Ten dokument możesz śmiało kopiować do repozytorium! Jeśli chcesz – mogę przygotować wersję z obrazkami, pokazami katalogów, czy jeszcze bardziej „dev-friendly” (np. osobne sekcje dla Windows/Linux/Mac).
