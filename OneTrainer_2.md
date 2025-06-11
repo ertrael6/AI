@@ -95,7 +95,7 @@ Możesz wykonać to ręcznie:
 
 ---
 
-## Uruchomienie OneTrainer
+## Uruchomienie programu – tryb graficzny i konsolowy
 
 OneTrainer oferuje zarówno interfejs graficzny (GUI), jak i narzędzia linii komend (CLI).
 
