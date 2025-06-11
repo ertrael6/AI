@@ -52,7 +52,7 @@ Najlepiej sklonować repozytorium GitHub OneTrainer:
 
 ```bash
 git clone https://github.com/Nerogar/OneTrainer.git
-
+ ```
 
 To pobierze wszystkie pliki programu na Twój dysk.
 
