@@ -250,7 +250,7 @@ zachowanie programu podczas treningu. Główne opcje w tej zakładce to:
 *(Screenshot:* *Przykładowa* *konfiguracja* *zakładki* *General* *z*
 *ustawionymi* *ścieżkami* *i* *włączonym* *TensorBoard.)*
 
-## Zakładka Model
+## Zakladka Model
 
 W zakładce **Model** podajesz parametry dotyczące modelu bazowego oraz
 formatu zapisu rezultatów. Innymi słowy, tu wskazujesz *na* *czym*
