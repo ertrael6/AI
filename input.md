@@ -72,7 +72,7 @@ To pobierze wszystkie pliki programu na Twój dysk.
  • **Windows:** Uruchom (poprzez dwuklik) plik install.bat w folderze OneTrainer.
 
  • **Linux/macOS:** Nadaj prawa wykonywalności install.sh i uruchom go
- '( ./install.sh ).'
+```( ./install.sh ).```
 
 Skrypt ten automatycznie utworzy środowisko wirtualne Pythona,
 zainstaluje wymagane pakiety (w tym PyTorch, biblioteki HuggingFace
@@ -89,11 +89,11 @@ temu, co robi skrypt):
 
  2. Aktywuj utworzone środowisko:
 
- 3. Windows: 'venvScriptsactivate'
+ 3. Windows: ```venvScriptsactivate```
 
- 4. Linux/macOS: 'source venv/bin/activate.'
+ 4. Linux/macOS: ```source venv/bin/activate.```
 
- 5. Zainstaluj wymagane pakiety: 'pip install -r requirements.txt'
+ 5. Zainstaluj wymagane pakiety: ```pip install -r requirements.txt```
 
  6. (Linux) Zainstaluj dodatkowe biblioteki systemowe, jeśli
  potrzebne: np. na Ubuntu brakująca może być biblioteka **libGL**,
