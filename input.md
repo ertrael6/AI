@@ -36,16 +36,17 @@ masz pewność aktualności informacji na czerwiec 2025.
 14. [Augmentacje obrazów](#augmentacje-obrazow)
 15. [Proporcje obrazu i bucketing (Aspect Ratio Buckets)](#proporcje-obrazu-i-bucketing-aspect-ratio-buckets)
 16. [Trenowanie modelu LoRA – przykłady](#trenowanie-modelu-lora--przyklady)
-    17. [LoRA na bazie SDXL](#lora-na-bazie-sdxl)
-    18. [LoRA na bazie modelu Flux](#lora-na-bazie-modelu-flux)
-19. [Zastosowanie wytrenowanych modeli w innych narzędziach](#zastosowanie-wytrenowanych-modeli-w-innych-narzedziach)
-20. [Tryb CLI – skrypty i ich zastosowania](#tryb-cli--skrypty-i-ich-zastosowania)
-21. [Zaawansowane opcje OneTrainer](#zaawansowane-opcje-onetrainer)
-22. [Ofloading do RAM (przenoszenie obciążenia na pamięć RAM)](#ofloading-do-ram-przenoszenie-obciazenia-na-pamiec-ram)
-23. [Precyzja obliczeń (precision) i typy danych](#precyzja-obliczen-precision-i-typy-danych)
-24. [Różne typy LoRA (LoRA, LoHa, DoRA)](#rozne-typy-lora-lora-loha-dora)
-25. [Wybór trenowanych warstw modelu](#wybor-trenowanych-warstw-modelu)
-26. [Praktyczne porady i najlepsze praktyki](#praktyczne-porady-i-najlepsze-praktyki)
+    
+   1. [LoRA na bazie SDXL](#lora-na-bazie-sdxl)
+   2.  [LoRA na bazie modelu Flux](#lora-na-bazie-modelu-flux)
+20. [Zastosowanie wytrenowanych modeli w innych narzędziach](#zastosowanie-wytrenowanych-modeli-w-innych-narzedziach)
+21. [Tryb CLI – skrypty i ich zastosowania](#tryb-cli--skrypty-i-ich-zastosowania)
+22. [Zaawansowane opcje OneTrainer](#zaawansowane-opcje-onetrainer)
+23. [Ofloading do RAM (przenoszenie obciążenia na pamięć RAM)](#ofloading-do-ram-przenoszenie-obciazenia-na-pamiec-ram)
+24. [Precyzja obliczeń (precision) i typy danych](#precyzja-obliczen-precision-i-typy-danych)
+25. [Różne typy LoRA (LoRA, LoHa, DoRA)](#rozne-typy-lora-lora-loha-dora)
+26. [Wybór trenowanych warstw modelu](#wybor-trenowanych-warstw-modelu)
+27. [Praktyczne porady i najlepsze praktyki](#praktyczne-porady-i-najlepsze-praktyki)
 
 
 
