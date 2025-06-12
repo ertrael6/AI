@@ -36,9 +36,8 @@ masz pewność aktualności informacji na czerwiec 2025.
 14. [Augmentacje obrazów](#augmentacje-obrazow)
 15. [Proporcje obrazu i bucketing (Aspect Ratio Buckets)](#proporcje-obrazu-i-bucketing-aspect-ratio-buckets)
 16. [Trenowanie modelu LoRA – przykłady](#trenowanie-modelu-lora--przyklady)
-    
    1. [LoRA na bazie SDXL](#lora-na-bazie-sdxl)
-   2.  [LoRA na bazie modelu Flux](#lora-na-bazie-modelu-flux)
+   2. [LoRA na bazie modelu Flux](#lora-na-bazie-modelu-flux)
 20. [Zastosowanie wytrenowanych modeli w innych narzędziach](#zastosowanie-wytrenowanych-modeli-w-innych-narzedziach)
 21. [Tryb CLI – skrypty i ich zastosowania](#tryb-cli--skrypty-i-ich-zastosowania)
 22. [Zaawansowane opcje OneTrainer](#zaawansowane-opcje-onetrainer)
