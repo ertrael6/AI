@@ -1,38 +1,4 @@
 
-# Minimalny Własny Model AI w Pythonie (PyTorch)
-
-Przykład: prosta klasyfikacja tekstu na własnym zbiorze danych.
-
----
-
-## 1. Wymagania
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install torch sklearn pandas
-```
-
----
-
-## 2. Dane (przykład)
-
-`data.csv`:
-```csv
-text,label
-To jest pozytywna wiadomość,1
-To jest negatywna wiadomość,0
-Uwielbiam AI,1
-Nie lubię czekolady,0
-```
-
----
-
-## 3. Kod: Model, Trening, Inferencja
-
-`model.py`:
-
-```python
 import torch
 from torch import nn
 from sklearn.feature_extraction.text import CountVectorizer
@@ -77,33 +43,3 @@ X_test = torch.tensor(X_test).float()
 probs = model(X_test).softmax(dim=1)
 print("Prawdopodobieństwa:", probs)
 print("Predykcje:", probs.argmax(dim=1))
-```
-
----
-
-## 4. Uruchomienie
-
-```bash
-python model.py
-```
-
----
-
-## 5. Customizacja
-
-- Wymień dane w `data.csv` na własne.
-- Rozbuduj model (więcej warstw, embeddingi, itp.)
-- Zamień CountVectorizer na transformers (`pip install transformers`) i model BERT – patrz poniżej.
-
----
-
-## 6. Wersja z Transformers (BERT)
-
-Chcesz przykład na transformers?  
-Zastąp kod powyżej kodem opartym o `transformers` (np. Hugging Face).
-
----
-
-## Licencja
-
-MIT
