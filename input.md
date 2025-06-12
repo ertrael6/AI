@@ -166,7 +166,7 @@ OneTrainer i skryptów w różnych systemach
 *(Screenshot:* *Ekran* *startowy* *OneTrainer* *po* *uruchomieniu* *GUI*
 *–* *miejsce* *na* *zrzut* *interfejsu* *aplikacji.)*
 
-## Interfejs graficzny OneTrainer – przegląd zakładek
+## Interfejs graficzny OneTrainer – przeglad zakladek
 
 Po uruchomieniu GUI zobaczysz główne okno OneTrainer, które składa się z
 menu **zakładek** (tabs) u góry oraz paneli z opcjami. Interfejs jest
@@ -179,7 +179,7 @@ wyjścia.
 
 Poniżej opisuje **każdą** **zakładkę** i znajdujące się w niej opcje:
 
-## Zakładka General (Ogólne)
+## Zakladka General (Ogolne)
 
 Zakładka **General** służy do ustawienia podstawowych ścieżek i
 globalnych opcji treningu. Tutaj definiujemy katalogi robocze i
@@ -321,7 +321,7 @@ tej zakładce to:
 *(Screenshot:* *Zakładka* *Model* *z* *wczytanym* *modelem* *bazowym*
 *SDXL* *i* *ustawioną* *nazwą* *pliku* *wyjściowego* *LoRA.)*
 
-## Zakładka Data (Dane)
+## Zakladka Data (Dane)
 
 W zakładce **Data** ustawiamy opcje dotyczące przetwarzania danych
 treningowych, głównie związane z przyspieszaniem treningu i obsługą
@@ -374,7 +374,7 @@ testować (domyślnie chyba 1 lub 2).
 [*56*]
 *.)*
 
-## Zakładka Concepts (Zbiór danych)
+## Zakladka Concepts (Zbiór danych)
 
 To kluczowa zakładka, gdzie konfigurujesz **zbiór** **treningowy**. W
 OneTrainer pojęcie *Concepts* oznacza po prostu zestawy obrazów ze
@@ -558,7 +558,7 @@ tylko gdy dataset jest mały lub jednorodny.
 *Tools* *zamiast* *ręcznie* *pisać* *opisy,* *o* *czym* *w* *dalszej*
 *części.)*
 
-## Zakładka Training
+## Zakladka Training
 
 W zakładce **Training** ustawiamy hiperparametry treningu: m.in.
 liczebność batchy, ilość epok, learning rate, wybór optymalizatora,
@@ -671,7 +671,7 @@ opisom/dymkom.
 *2,* *10* *epok,* *optimizer* *AdamW,* *LR* *1e-4,* *mask* *training*
 *on* *z* *parametrami.)*
 
-**Zakładka** **LoRA**
+## Zakladka LoRA
 
 Ta zakładka pojawia się **tylko** **jeśli** **w** **ogólnych**
 **ustawieniach** **wybrałeś** **tryb** **LoRA** (górny pasek, dropdown
@@ -776,7 +776,7 @@ zwiększająca elastyczność treningu.
 *wybrany* *na* *LoHa,* *rank* *8,* *alpha* *1,* *dropout* *0.1,* *DoRA*
 *włączone,* *layers* *=* *attn+MLP.)*
 
-**Zakładka** **Sampling** **i** **Backup**
+## Zakladka Sampling i Backup
 
 OneTrainer posiada również zakładki pozwalające na generowanie
 podglądowych obrazów podczas treningu (**Sampling**) oraz zarządzanie
@@ -834,7 +834,7 @@ w trakcie.
 *–* *prefix* *ustawiony,* *zachowaj* *ostatnie* *3* *kopie,* *zapisuj*
 *co* *1* *epoch.)*
 
-**Zakładka** **Tools** **(Narzędzia)**
+## Zakladka Tools (Narzedzia)
 
 Zakładka Tools zawiera **przydatne** **narzędzia** **dodatkowe**, które
 upraszczają przygotowanie danych i rozszerzają możliwości OneTrainer. W
@@ -905,13 +905,13 @@ przygotowania danych, przez trening, po konwersje modeli.
 *WD14* *do* *tagowania* *datasetu* *oraz* *ClipSeg* *do*
 *automatycznego* *maskowania* *obrazów.)*
 
-**Przygotowanie** **danych** **do** **treningu**
+## Przygotowanie danych do treningu
 
 Przygotowanie datasetu to najważniejszy etap trenowania modelu
 (zwłaszcza LoRA). Tutaj podsumujemy najlepsze praktyki w kontekście
 OneTrainer:
 
-**Obrazy** **i** **podpisy** **(.txt)**
+## Obrazy i podpisy (.txt)
 
 Zbiór treningowy powinien składać się z obrazów powiązanych z
 tematem/obiektem, którego model ma się nauczyć. Do każdego obrazu
@@ -984,7 +984,7 @@ udostępnia narzędzia, by Ci to ułatwić
 może opisać scenę za bardzo ogólnie (doprecyzuj ręcznie). Zainwestowany
 czas przed treningiem zaoszczędzi Ci frustracji po.
 
-**Augmentacje** **obrazów**
+## Augmentacje obrazow
 
 Augmentacje to sposób na sztuczne powiększenie różnorodności datasetu.
 OneTrainer, jak opisano w zakładce Concepts → Image Augmentation,
@@ -1024,8 +1024,7 @@ Jeszcze uwaga: augmentacje w OneTrainer mogą być *deterministyczne* lub
 pamiętaj o interakcji z cache (Image/Text Variations ustaw jak w
 Concepts wyżej).
 
-**Proporcje** **obrazu** **i** **bucketing** **(Aspect** **Ratio**
-**Buckets)**
+## Proporcje obrazu i bucketing (Aspect Ratio Buckets)
 
 Trening generatywny preferuje obrazy kwadratowe (512x512, 768x768,
 itp.), bo takie były oryginalne dane SD1.x. Jednak świat nie jest
@@ -1081,7 +1080,7 @@ zarówno portret 9:16, jak i pejzaż 16:9), co jest bardzo pożądane.
 *stronę* *Aspect* *Ratio* *Bucketing*
 
 
-**Trenowanie** **modelu** **LoRA** **–** **przykłady**
+## Trenowanie modelu LoRA – przyklady
 
 Mając przygotowane dane i skonfigurowany OneTrainer, przechodzimy do
 właściwego treningu. Poniżej przedstawiamy dwa scenariusze: trenowanie
@@ -1089,7 +1088,7 @@ LoRA na bazie modelu **Stable** **Diffusion** **XL** (SDXL) oraz
 trenowanie LoRA na bazie modelu **Flux** (specyficzna architektura typu
 DiT).
 
-**LoRA** **na** **bazie** **SDXL**
+## LoRA na bazie SDXL
 
 Załóżmy, że chcesz stworzyć LoRA, która pozwoli generować obrazy
 stylizowane na określone dzieła sztuki, albo przedstawiające konkretną
@@ -1223,7 +1222,7 @@ trening, ale będzie wolniej. Alternatywnie możesz trenować SDXL LoRA w
 chmurze (RunPod, Colab etc.) – OneTrainer ma nawet poradniki jak to
 skonfigurować.
 
-**LoRA** **na** **bazie** **modelu** **Flux**
+## LoRA na bazie modelu Flux
 
 Model **Flux** (dokładnie Flux.1) to dość eksperymentalna architektura
 od Black Forest Labs – *Flow* *Matching* *Diffusion*. Ma duży potencjał,
@@ -1381,8 +1380,7 @@ to nowość z 2025), więc posiłkuj się wątkiem na Reddit i wiki flux.
 *do* *generacji,* *bo* *generować* *fluxem* *da* *się* *na* *8GB* *przy*
 *512x512* *jednym* *kroku.)*
 
-**Zastosowanie** **wytrenowanych** **modeli** **w** **innych**
-**narzędziach**
+## Zastosowanie wytrenowanych modeli w innych narzedziach
 
 Wytrenowane za pomocą OneTrainer modele można z powodzeniem
 wykorzystywać w popularnych narzędziach do generowania obrazów AI,
@@ -1446,7 +1444,7 @@ na CivitAI czy HuggingFace, opisując jak trenowałeś (tu możesz
 wspomnieć, że użyłeś OneTrainer – to pokaże, że masz praktyczne
 doświadczenie z nowoczesnymi narzędziami ML).
 
-**Tryb** **CLI** **–** **skrypty** **i** **ich** **zastosowania**
+## Tryb CLI – skrypty i ich zastosowania
 
 OneTrainer w trybie konsolowym oferuje bogaty zestaw skryptów Python,
 które pozwalają automatyzować i rozszerzać działania, które normalnie
@@ -1576,14 +1574,13 @@ jak wywołać trening, jak parametry przełożyć na argumenty, itd.
 *subprocess* *różnymi* *argumentami,* *logując* *wyniki.* *OneTrainer*
 *CLI* *czyni* *to* *możliwym* *bez* *ręcznego* *klikania.)*
 
-**Zaawansowane** **opcje** **OneTrainer**
+## Zaawansowane opcje OneTrainer
 
 W poprzednich sekcjach przewinęło się sporo zaawansowanych tematów.
 Tutaj zbierzemy je w jednym miejscu i pokrótce omówimy, by podkreślić
 Twoją znajomość tych aspektów:
 
-**Ofloading** **do** **RAM** **(przenoszenie** **obciążenia** **na**
-**pamięć** **RAM)**
+## Ofloading do RAM (przenoszenie obciazenia na pamiec RAM)
 
 OneTrainer potrafi automatycznie **ofloadować** część danych z GPU do
 CPU, co jest zbawienne, gdy trenujemy bardzo duży model lub mamy
@@ -1632,7 +1629,7 @@ Podsumowując: Ofloading to potężna funkcja, ale trzeba mieć na względzie
 posiadany RAM. Przy 16GB RAM bym nie ryzykował; przy 32GB może zadziała,
 lecz może swapować na dysk, co zabije wydajność.
 
-**Precyzja** **obliczeń** **(precision)** **i** **typy** **danych**
+## Precyzja obliczeń (precision) i typy danych
 
 Nowoczesne treningi często korzystają z obniżonej precyzji (mixed
 precision) oraz kwantyzacji w celu zmniejszenia zużycia pamięci i
@@ -1692,7 +1689,7 @@ potencjalne problemy (instability). OneTrainer domyślnie stara się
 używać rozsądnej mieszanej precyzji. W testach nie stwierdzono by to
 powodowało istotne problemy.
 
-**Różne** **typy** **LoRA** **(LoRA,** **LoHa,** **DoRA)**
+## Rozne typy LoRA (LoRA, LoHa, DoRA)
 
 Tradycyjna LoRA to nie jedyny sposób na efektywne dostrajanie modeli.
 Wspominaliśmy: - **LoHa** **(Lycoris):** Rozszerzenie LoRA, które
@@ -1736,7 +1733,7 @@ implementacją LoRA i jej rozszerzeń (LoHa, DoRA) – potrafię je
 zastosować i wiem kiedy są korzystne (np. DoRA do stabilizacji trudnych
 treningów)”.
 
-**Wybór** **trenowanych** **warstw** **modelu**
+## Wybor trenowanych warstw modelu
 
 To dość niszowa, ale ciekawa opcja. Wspomnieliśmy w LoRA zakładce o
 **Layer** **Preset** i możliwości custom. Dlaczego to jest ważne:
@@ -1775,7 +1772,7 @@ control. Te funkcje są zdecydowanie zaawansowane i wykraczają poza
 „kliknij i czekaj”. Ich opanowanie dowodzi praktycznych umiejętności w
 trenowaniu modeli AI i rozumienia mechanizmów uczenia.
 
-**Praktyczne** **porady** **i** **najlepsze** **praktyki**
+## Praktyczne porady i najlepsze praktyki
 
 Na zakończenie, kilka dodatkowych porad z doświadczeń użytkowników
 OneTrainer i ogólnych zasad:
