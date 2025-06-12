@@ -53,7 +53,7 @@ masz pewność aktualności informacji na czerwiec 2025.
 
 
 
-## Instalacja OneTrainer(GUI i CLI)
+## Instalacja OneTrainer (GUI i CLI)
 
 **Wymagania** **wstępne:** OneTrainer wymaga zainstalowanego **Pythona**
 **w** **wersji** **3.10–3.12** (nowszych niż 3.13 nie wspiera) oraz
