@@ -73,14 +73,10 @@ To pobierze wszystkie pliki programu na Twój dysk.
 *skrypt* *automatycznej* *instalacji*. Po sklonowaniu repozytorium:
 
  • **Windows:** Uruchom (poprzez dwuklik) plik install.bat w folderze
- OneTrainer 
- 
- .
+ OneTrainer.
 
  • **Linux/macOS:** Nadaj prawa wykonywalności install.sh i uruchom go
- ( ./install.sh )
- 
- .
+ ( ./install.sh ).
 
 Skrypt ten automatycznie utworzy środowisko wirtualne Pythona,
 zainstaluje wymagane pakiety (w tym PyTorch, biblioteki HuggingFace
@@ -93,30 +89,20 @@ kontrolować środowisko, możesz wykonać następujące kroki (odpowiadające
 temu, co robi skrypt):
 
  1. Utwórz wirtualne środowisko: przejdź do katalogu OneTrainer i
- wykonaj python -m venv venv
- 
- .
+ wykonaj python -m venv venv.
 
  2. Aktywuj utworzone środowisko:
 
  3. Windows: venvScriptsactivate
 
- 4. Linux/macOS: source venv/bin/activate
- 
- .
+ 4. Linux/macOS: source venv/bin/activate.
 
- 5. Zainstaluj wymagane pakiety: pip install -r requirements.txt
- 
- .
+ 5. Zainstaluj wymagane pakiety: pip install -r requirements.txt .
 
  6. (Linux) Zainstaluj dodatkowe biblioteki systemowe, jeśli
  potrzebne: np. na Ubuntu brakująca może być biblioteka **libGL**,
- doinstalujesz ją komendą sudo apt-get install libgl1
- 
- . (W Alpine Linux zainstaluj py3-tk , w Arch: tk – to zapewnia
- działanie interfejsu tkinter dla GUI
-
-  ).
+ doinstalujesz ją komendą sudo apt-get install libgl1. (W Alpine Linux zainstaluj py3-tk , w Arch: tk – to zapewnia
+ działanie interfejsu tkinter dla GUI).
 
 Po poprawnej instalacji, w folderze OneTrainer pojawi się wirtualne
 środowisko ( venv ) oraz wszystkie zależności. Możesz teraz przejść do
@@ -124,8 +110,7 @@ uruchomienia programu.
 
 ## Uruchomienie programu – tryb graficzny i konsolowy
 
-OneTrainer oferuje dwa tryby działania
- :
+OneTrainer oferuje dwa tryby działania:
 
  • **GUI** **(graficzny** **interfejs** **użytkownika):** Przyjazny
  interfejs okienkowy, pozwalający konfigurować trening za pomocą
@@ -139,13 +124,11 @@ OneTrainer oferuje dwa tryby działania
 **Uruchomienie** **GUI:**
 
  • **Windows:** Uruchom plik start-ui.bat (np. dwukrotnie klikając go
- lub przez konsolę) w katalogu głównym OneTrainer
-  .
+ lub przez konsolę) w katalogu głównym OneTrainer.
  Spowoduje to otwarcie okienkowego interfejsu OT.
 
  • **Linux/macOS:** Wykonaj skrypt start-ui.sh ( ./start-ui.sh ) w
- katalogu OneTrainer – aplikacja graficzna powinna się uruchomić
-  . Uwaga: na
+ katalogu OneTrainer – aplikacja graficzna powinna się uruchomić . Uwaga: na
  systemach Linux wymagane może być zainstalowanie pakietu tk (jeśli GUI
  nie startuje).
 
