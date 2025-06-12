@@ -1222,7 +1222,7 @@ trening, ale będzie wolniej. Alternatywnie możesz trenować SDXL LoRA w
 chmurze (RunPod, Colab etc.) – OneTrainer ma nawet poradniki jak to
 skonfigurować.
 
-## LoRA na bazie modelu Flux
+### LoRA na bazie modelu Flux
 
 Model **Flux** (dokładnie Flux.1) to dość eksperymentalna architektura
 od Black Forest Labs – *Flow* *Matching* *Diffusion*. Ma duży potencjał,
