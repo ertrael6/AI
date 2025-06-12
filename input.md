@@ -16,9 +16,6 @@ użycie zaawansowanych funkcji OneTrainer. Całość jest oparta o
 **oficjalną** **dokumentację** (wiki GitHub OneTrainer) – dzięki temu
 masz pewność aktualności informacji na czerwiec 2025.
 
-*(Sekcje* *oznaczone* *jako* *„Screenshot”* *zawierają* *miejsce* *na*
-*zrzuty* *ekranu:* *konfiguracji,* *wyników* *oraz* *uruchomienia*
-*programu,* *aby* *zilustrować* *proces.)*
 
 **Spis** **treści**
 ## Spis treści
@@ -72,11 +69,10 @@ To pobierze wszystkie pliki programu na Twój dysk.
 **Krok** **2:** **Instalacja** **zależności.** OneTrainer oferuje
 *skrypt* *automatycznej* *instalacji*. Po sklonowaniu repozytorium:
 
- • **Windows:** Uruchom (poprzez dwuklik) plik install.bat w folderze
- OneTrainer.
+ • **Windows:** Uruchom (poprzez dwuklik) plik install.bat w folderze OneTrainer.
 
  • **Linux/macOS:** Nadaj prawa wykonywalności install.sh i uruchom go
- ( ./install.sh ).
+ '( ./install.sh ).'
 
 Skrypt ten automatycznie utworzy środowisko wirtualne Pythona,
 zainstaluje wymagane pakiety (w tym PyTorch, biblioteki HuggingFace
@@ -89,15 +85,15 @@ kontrolować środowisko, możesz wykonać następujące kroki (odpowiadające
 temu, co robi skrypt):
 
  1. Utwórz wirtualne środowisko: przejdź do katalogu OneTrainer i
- wykonaj python -m venv venv.
+ wykonaj python '-m venv venv.'
 
  2. Aktywuj utworzone środowisko:
 
- 3. Windows: venvScriptsactivate
+ 3. Windows: 'venvScriptsactivate'
 
- 4. Linux/macOS: source venv/bin/activate.
+ 4. Linux/macOS: 'source venv/bin/activate.'
 
- 5. Zainstaluj wymagane pakiety: pip install -r requirements.txt .
+ 5. Zainstaluj wymagane pakiety: 'pip install -r requirements.txt'
 
  6. (Linux) Zainstaluj dodatkowe biblioteki systemowe, jeśli
  potrzebne: np. na Ubuntu brakująca może być biblioteka **libGL**,
