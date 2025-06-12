@@ -123,8 +123,11 @@ OneTrainer oferuje dwa tryby działania:
  lub przez konsolę) w katalogu głównym OneTrainer.
  Spowoduje to otwarcie okienkowego interfejsu OT.
 
- • **Linux/macOS:** Wykonaj skrypt start-ui.sh ( ./start-ui.sh ) w
- katalogu OneTrainer – aplikacja graficzna powinna się uruchomić . Uwaga: na
+ • **Linux/macOS:** Wykonaj skrypt 
+ ```
+start-ui.sh ( ./start-ui.sh )
+```
+w katalogu OneTrainer – aplikacja graficzna powinna się uruchomić . Uwaga: na
  systemach Linux wymagane może być zainstalowanie pakietu tk (jeśli GUI
  nie startuje).
 
@@ -148,7 +151,9 @@ programu. Każdy skrypt możesz uruchomić za pomocą Pythona, np.:
  cd OneTrainer
 
  # aktywuj venv, jeśli jeszcze nie jest aktywny python
- scripts/train.py --help
+ ```
+scripts/train.py --help
+```
 
 Powyższe polecenie wyświetli dostępne opcje głównego skryptu
 treningowego train.py . Podobnie, python scripts/generate_captions.py -h
@@ -290,9 +295,7 @@ tej zakładce to:
 
  • **Model** **Output** **Destination:** docelowa nazwa/ścieżka dla
  zapisywanego modelu wynikowego (twojego wytrenowanego LoRA lub
- checkpointu). Możesz podać pełną nazwę pliku (np.
-
- models/moj_lora.safetensors – wtedy plik z LoRA znajdzie się tam po
+ checkpointu). Możesz podać pełną nazwę pliku (np. models/moj_lora.safetensors – wtedy plik z LoRA znajdzie się tam po
  treningu). Jeśli podasz istniejący folder, OneTrainer wygeneruje nazwę
  pliku automatycznie, używając prefixu kopii zapasowej i sygnatury
  czasu. **Uwaga:** Dla LoRA nazwa powinna mieć rozszerzenie .safetensors lub .ckpt (choć zalecane jest safetensors ze względów
@@ -641,9 +644,7 @@ opiszemy główne parametry:
  strat z obszaru maski).
 
  • **Normalize** **Masked** **Area** **Loss** – opcja normalizacji
- straty dla obszaru maski
- 
- . Zaleca się *włączać,* *gdy* *maska* *zajmuje* *duży* *obszar*
+ straty dla obszaru maski. Zaleca się *włączać,* *gdy* *maska* *zajmuje* *duży* *obszar*
  *obrazu* (np. maseczka na całej twarzy), aby strata była prawidłowo
  skalowana; dla małych masek nie włączaj (może zwiększyć loss
  niepotrzebnie).
@@ -868,14 +869,10 @@ woman’s face”, a ClipSeg spróbuje zamaskować twarz kobiety na zdjęciu). -
 produktów itp. - **Hex** **Color** – narzędzie do maskowania według
 zadanego koloru (np. wszystkie zielone piksele zamaskuj).
 
- 13
-
 Możesz wybrać narzędzie i uruchomić – OneTrainer wygeneruje pliki
 *-masklabel.png dla każdego obrazu. Dostępne są też funkcje manualne:
 malowanie własnej maski i użycie *fill* (wypełnienie reszty). Po zakończeniu edycji maski *pamiętaj* *nacisnąć* *Enter,* *żeby*
- *zapisać* *zmiany*
- 
- .
+ *zapisać* *zmiany*.
 
 **Dataset** **Tools** są niezwykle wygodne – dzięki nim cały pipeline
 (tagowanie obrazów, maskowanie) można zrobić wewnątrz OneTrainer, bez
@@ -938,11 +935,7 @@ nieprzewidywalne), **dobry** **opis** **do** **każdego** **obrazka**
  dokładnie odpowiadać nazwom obrazów. Jeśli masz photo123.jpg , stwórz
  photo123.txt z opisem. Gdy obraz jest .png , nazwa .txt również
  .png.txt lub .txt (zależy od OS, zwykle .png i .txt to różne
- rozszerzenia, więc
-
- 14
-
- dokładnie photo.png i photo.png.txt nie będą uważane za parę – unikaj
+ rozszerzenia, więc dokładnie photo.png i photo.png.txt nie będą uważane za parę – unikaj
  kropek w nazwie poza rozszerzeniem).
 
  • **Treść** **podpisów:** staraj się, by były **opisowe** **i**
@@ -1050,9 +1043,7 @@ automatycznie (gdy włączone). Jak to działa i co warto wiedzieć:
 
  • OneTrainer przy wczytywaniu datasetu zmierzy wymiary każdego obrazu
  i przypisze obraz do najbliższego “wiaderka” (bucket) spośród
- zadanych, tak aby liczba pikseli mniej więcej się zgadzała
- 
- . Następnie podczas treningu obrazy będą skalowane do wymiarów bucketu
+ zadanych, tak aby liczba pikseli mniej więcej się zgadzała. Następnie podczas treningu obrazy będą skalowane do wymiarów bucketu
  (z zachowaniem aspektu, reszta jest docinana z włączonym jitter jeśli
  zaznaczyłeś).
 
@@ -1469,16 +1460,20 @@ ich użycia:
  szczególnie przydatny na serwerach (gdzie nie masz ekranu) lub do
  pisania własnych procedur. Przykład użycia:
 
- python scripts/train.py --config configs/SDXL_LoRA.json
+ ```
+python scripts/train.py --config configs/SDXL_LoRA.json
+```
 
  (zakładając, że zapisaliśmy konfigurację z GUI do pliku JSON) lub:
 
- python scripts/train.py --base_model
+ ```
+python scripts/train.py --base_model
  "stabilityai/stable-diffusion-2-1" --train_data_dir "data/images"
  --output_dir "models/output" --lora_rank 8 [inne opcje...]
+```
 
- Parametrów jest dużo – aby je poznać, uruchom python scripts/train.py
- -h
+ Parametrów jest dużo – aby je poznać, uruchom python ```scripts/train.py
+ -h```
  
  . Warto podkreślić, że **GUI** **OneTrainer** **jest** **nakładką** na
  ten skrypt – konfigurując w UI i klikając Start, tak naprawdę
@@ -1510,8 +1505,9 @@ ich użycia:
  BLIP2 (który zostanie pobrany przy pierwszym użyciu). Możesz też
  skorzystać z WD14 tagger:
 
- python scripts/generate_captions.py --image_dir "data/mydataset"
+ ```python scripts/generate_captions.py --image_dir "data/mydataset"
  --caption_model "wd14-convnextv2" --append_tags --tag_threshold 0.35
+```
 
  To wygeneruje tagi Danbooru dla obrazków, dołączając je (append) do
  istniejących podpisów, z progiem pewności 0.35. Skrypt jest bardzo
@@ -1520,32 +1516,32 @@ ich użycia:
  robić).
 
  • **generate_masks.py** **:** Podobnie jak wyżej, ale do
- automatycznego tworzenia masek
- 
- . Pozwala wybrać metodę (clipseg, rembg) i przetworzyć cały folder
+ automatycznego tworzenia masek. Pozwala wybrać metodę (clipseg, rembg) i przetworzyć cały folder
  obrazów generując maski. Np.:
 
- python scripts/generate_masks.py --image_dir "data/mydataset" --method
+ ```
+python scripts/generate_masks.py --image_dir "data/mydataset" --method
  "rembg"
+```
 
  lub z użyciem ClipSeg z promptem:
 
- python scripts/generate_masks.py --image_dir "data/mydataset" --method
+ ```
+python scripts/generate_masks.py --image_dir "data/mydataset" --method
  "clipseg" --prompt "object in center"
+```
 
  Skrypt ten oszczędza czas, gdy chcesz przygotować maski do masked
  training hurtowo. • **sample.py** **:** Narzędzie do generowania
- obrazów (inference) z dowolnego modelu, bez
-
- potrzeby użycia osobnego UI
- 
- . Możesz np. wygenerować serię obrazów z modelem (będącym wynikiem
+ obrazów (inference) z dowolnego modelu, bez potrzeby użycia osobnego UI. Możesz np. wygenerować serię obrazów z modelem (będącym wynikiem
  treningu) w ramach ewaluacji. Przykład:
 
 
- python scripts/sample.py --model_path "models/MyLora.safetensors"
+ ```
+python scripts/sample.py --model_path "models/MyLora.safetensors"
  --base_model "stabilityai/stable-diffusion-1-5" --prompt "a cat"
  --negative_prompt "blurry" --output_dir "outputs/samples"
+```
 
  Powyższe załaduje model podstawowy 1.5, nałoży LoRę MyLora i
  wygeneruje obraz z zadanym promptem. Możesz oczywiście generować wiele
@@ -1822,14 +1818,11 @@ OneTrainer i ogólnych zasad:
 
  • **Wykorzystuj** **Dev** **Corner:** Oficjalne wiki OneTrainer ma
  sekcję Dev Corner, gdzie znajdują się wskazówki dla programistów i zaawansowanych
- użytkowników. Można tam znaleźć np. omówienie struktury projektu, co ułatwi Ci ewentualne debugowanie czy dodawanie
-
- własnych funkcji. Dla rekrutera może mieć znaczenie, że potrafisz
+ użytkowników. Można tam znaleźć np. omówienie struktury projektu, co ułatwi Ci ewentualne debugowanie czy dodawanie własnych funkcji. Dla rekrutera może mieć znaczenie, że potrafisz
  czytać kod narzędzia i ewentualnie go modyfikować – w OT to możliwe,
  bo kod jest czysty (tkinter, PyTorch, Diffusers).
 
- • **Common** **mistakes** **(częste** **błędy):** Wiki OT ma sekcję
- poświęconą typowym potknięciom użytkowników migracji z kohya. Np. ludzie zapominają, że w OneTrainer workspace musi być ustawiony
+ • **Common** **mistakes** **(częste** **błędy):** Wiki OT ma sekcję poświęconą typowym potknięciom użytkowników migracji z kohya. Np. ludzie zapominają, że w OneTrainer workspace musi być ustawiony
  poprawnie, inaczej generowane sample nie zapiszą się tam gdzie myślą;
  albo że przy kontynuacji treningu z backup *nie* *należy* *zmieniać*
  *nic* *w* *konfiguracji*, bo to może dać niespójność. Zalecenie: jeśli
