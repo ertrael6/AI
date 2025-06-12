@@ -464,9 +464,7 @@ ustawienia (zakładka *General* w oknie conceptu) to:
  *=* *1*).
 
  • **Text** **Variations:** (domyślnie 1) – analogicznie, ile
- *wariantów* *tekstu* (podpisu) będzie keszowanych na obraz
- 
- . Jeśli nie trenujesz encoderów tekstowych i korzystasz z caching,
+ *wariantów* *tekstu* (podpisu) będzie keszowanych na obraz. Jeśli nie trenujesz encoderów tekstowych i korzystasz z caching,
  zaleca się zwiększyć tę wartość, aby uniknąć sytuacji, że jeden
  wylosowany podpis zostanie użyty w każdej epoce (z cache). Generalnie,
  jeśli masz wiele epok i wiele możliwych podpisów na obraz, daj większe
