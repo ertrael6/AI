@@ -5,9 +5,8 @@ OneTrainer (OT) to kompleksowe narzędzie do trenowania modeli
 generatywnych (Stable Diffusion) z przyjaznym interfejsem graficznym
 (GUI) oraz trybem konsolowym (CLI). Pozwala na pełne dostrajanie modeli
 (fine-tuning), trenowanie LoRA (Low-Rank Adaptation) oraz wgrywanie
-tekstowych osadzeń (textual inversion)
-[1](https://github.com/Nerogar/OneTrainer#:~:text=,to%20track%20the%20training%20progress)
-. Dzięki OneTrainer możesz trenować modele na bazie różnych wersji
+tekstowych osadzeń (textual inversion). 
+Dzięki OneTrainer możesz trenować modele na bazie różnych wersji
 Stable Diffusion (v1.5, v2.x, SDXL, a nawet architekturę Flux) w prosty
 sposób – skryptem instalacyjnym lub z użyciem wirtualnego środowiska
 Pythona. Poniższy przewodnik zawiera szczegółowe instrukcje instalacji (krok po
@@ -58,15 +57,10 @@ masz pewność aktualności informacji na czerwiec 2025.
 **Wymagania** **wstępne:** OneTrainer wymaga zainstalowanego **Pythona**
 **w** **wersji** **3.10–3.12** (nowszych niż 3.13 nie wspiera) oraz
 **PyTorch** **2.6.0+** kompatybilnego z posiadaną akceleratorem (CUDA
-11.8+ dla kart Nvidia lub ROCm 6.2.4+ dla kart AMD)
-[4](https://github-wiki-see.page/m/Nerogar/OneTrainer/wiki#:~:text=,OOMing%20due%20to%20garbage%20collection)
-. Upewnij się, że masz co najmniej **7** **GB** **wolnego** **miejsca**
-**dyskowego**, ponieważ instalacja i pliki modeli tyle zajmą
-[5](https://github-wiki-see.page/m/Nerogar/OneTrainer/wiki#:~:text=,OOMing%20due%20to%20garbage%20collection)
-. Jeśli planujesz korzystać z treningu z ofloadingiem na CPU, zalecane
-jest 64 GB RAM (minimum 32 GB, ale mogą wystąpić błędy Out-Of-Memory)
-[5](https://github-wiki-see.page/m/Nerogar/OneTrainer/wiki#:~:text=,OOMing%20due%20to%20garbage%20collection)
-.
+11.8+ dla kart Nvidia lub ROCm 6.2.4+ dla kart AMD). Upewnij się, że masz co najmniej **7** **GB** **wolnego** **miejsca**
+**dyskowego**, ponieważ instalacja i pliki modeli tyle zajmą. 
+Jeśli planujesz korzystać z treningu z ofloadingiem na CPU, zalecane
+jest 64 GB RAM (minimum 32 GB, ale mogą wystąpić błędy Out-Of-Memory).
 
 **Krok** **1:** **Pobranie** **kodu** **źródłowego.** Najlepiej
 sklonować repozytorium GitHub OneTrainer. Wykonaj w terminalu polecenie:
@@ -201,8 +195,7 @@ OneTrainer i skryptów w różnych systemach
 
  3
 
-**Interfejs** **graficzny** **OneTrainer** **–** **przegląd**
-**zakładek**
+## Interfejs graficzny OneTrainer – przegląd zakładek
 
 Po uruchomieniu GUI zobaczysz główne okno OneTrainer, które składa się z
 menu **zakładek** (tabs) u góry oraz paneli z opcjami. Interfejs jest
@@ -219,7 +212,7 @@ wyjścia.
 
 Poniżej opisujemy **każdą** **zakładkę** i znajdujące się w niej opcje:
 
-**Zakładka** **General** **(Ogólne)**
+## Zakładka General (Ogólne)
 
 Zakładka **General** służy do ustawienia podstawowych ścieżek i
 globalnych opcji treningu. Tutaj definiujemy katalogi robocze i
@@ -333,7 +326,7 @@ zachowanie programu podczas treningu. Główne opcje w tej zakładce to
 *(Screenshot:* *Przykładowa* *konfiguracja* *zakładki* *General* *z*
 *ustawionymi* *ścieżkami* *i* *włączonym* *TensorBoard.)*
 
-**Zakładka** **Model**
+## Zakładka Model
 
 W zakładce **Model** podajesz parametry dotyczące modelu bazowego oraz
 formatu zapisu rezultatów. Innymi słowy, tu wskazujesz *na* *czym*
@@ -436,7 +429,7 @@ tej zakładce to
 *(Screenshot:* *Zakładka* *Model* *z* *wczytanym* *modelem* *bazowym*
 *SDXL* *i* *ustawioną* *nazwą* *pliku* *wyjściowego* *LoRA.)*
 
-**Zakładka** **Data** **(Dane)**
+## Zakładka Data (Dane)
 
 W zakładce **Data** ustawiamy opcje dotyczące przetwarzania danych
 treningowych, głównie związane z przyspieszaniem treningu i obsługą
@@ -505,7 +498,7 @@ testować (domyślnie chyba 1 lub 2).
 [*56*](https://github-wiki-see.page/m/Nerogar/OneTrainer/wiki/Onboarding-Guide-for-Newcomers#:~:text=Concept%20page)
 *.)*
 
-**Zakładka** **Concepts** **(Zbiór** **danych)**
+## Zakładka Concepts (Zbiór danych)
 
 To kluczowa zakładka, gdzie konfigurujesz **zbiór** **treningowy**. W
 OneTrainer pojęcie *Concepts* oznacza po prostu zestawy obrazów ze
@@ -759,7 +752,7 @@ tylko gdy dataset jest mały lub jednorodny.
 *Tools* *zamiast* *ręcznie* *pisać* *opisy,* *o* *czym* *w* *dalszej*
 *części.)*
 
-**Zakładka** **Training** **(Trening)**
+## Zakładka Training
 
 W zakładce **Training** ustawiamy hiperparametry treningu: m.in.
 liczebność batchy, ilość epok, learning rate, wybór optymalizatora,
