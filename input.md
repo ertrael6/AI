@@ -147,10 +147,10 @@ Aby korzystać z trybu konsolowego, otwórz terminal/wiersz poleceń
 Python i zainstalowane pakiety). W folderze OneTrainer znajduje się
 katalog scripts , zawierający różne skrypty odpowiadające funkcjom
 programu. Każdy skrypt możesz uruchomić za pomocą Pythona, np.:
-
+ ```
  cd OneTrainer
-
- # aktywuj venv, jeśli jeszcze nie jest aktywny python
+ ```
+Aktywuj venv, jeśli jeszcze nie jest aktywny python
  ```
 scripts/train.py --help
 ```
